@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col-lg-8 col-md-8 col-sm-12 col-xs-12">
+	<div id="primary" class="content-area <?php do_action('simpel_primary-width') ?>">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">

@@ -12,34 +12,7 @@
 	</div><!-- #page -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	<div id="footer-sidebar" class="widget-area clear container" role="complementary">
-	<?php do_action( 'before_sidebar' ); ?>
-	<?php 
-		if ( is_active_sidebar( 'sidebar-2' ) ) { ?>
-		<div class="footer-column col-lg-3 col-md-3 col-sm-12 col-xs-12"> <?php
-			dynamic_sidebar( 'sidebar-2'); 
-		?> </div> <?php	
-		}
-			
-		if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
-		<div class="footer-columncol-lg-3 col-md-3 col-sm-12 col-xs-12"> <?php
-			dynamic_sidebar( 'sidebar-3'); 
-		?> </div> <?php	
-		}
-
-		if ( is_active_sidebar( 'sidebar-4' ) ) { ?>
-		<div class="footer-columncol-lg-3 col-md-3 col-sm-12 col-xs-12"> <?php
-			dynamic_sidebar( 'sidebar-4'); 
-		?> </div> <?php	
-		}
-		
-		if ( is_active_sidebar( 'sidebar-5' ) ) { ?>
-		<div class="footer-columncol-lg-3 col-md-3 col-sm-12 col-xs-12"> <?php
-			dynamic_sidebar( 'sidebar-5'); 
-		?> </div> <?php	
-		}
-		?>	 		
-	</div>
+        <?php get_sidebar('footer'); ?>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'simpel' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'simpel' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
