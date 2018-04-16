@@ -11,7 +11,7 @@ function simpel_scripts() {
 
     wp_enqueue_style('simpel-bootstrap-style',get_template_directory_uri()."/assets/bootstrap/bootstrap.min.css", array('simpel-style'));
 
-    wp_enqueue_style('simpel-main-skin',get_template_directory_uri()."/assets/theme-styles/css/default.css" );
+    wp_enqueue_style('simpel-main-skin',get_template_directory_uri()."/assets/theme-styles/css/".get_theme_mod('simpel_skin', 'default').'.css', array(), null  );
 
     wp_enqueue_style('simpel-font-awesome', get_template_directory_uri()."/assets/font-awesome/css/font-awesome.min.css", array('simpel-main-skin'));
 

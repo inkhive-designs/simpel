@@ -57,3 +57,35 @@
   */
   }
 }
+
+
+.simpels {
+  .featured-wrapper {
+    overflow: hidden;
+    .featured-image {
+      .mask {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.4);
+        box-sizing:border-box;
+        //opacity:1;
+        //visibility:visible;
+        //transform:scale(4);
+        transition:all 1s ease-in-out;
+      }
+      &:hover .mask {
+        //opacity: 0;
+        transform:translateY(-250px);
+        transition: 1s all ease;
+        //visibility:hidden;
+      }
+    }
+  }
+  .entry-title a {
+    font-size: large;
+  }
+}

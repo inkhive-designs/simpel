@@ -5,11 +5,11 @@
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('simpel grid3 col-lg-4 col-md-4 col-sm-12 col-xs-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('simpel simpels col-lg-4 col-md-4 col-sm-12 col-xs-12'); ?>>
     <div class = "featured-wrapper">
 
         <div class="featured-image"><a href="<?php the_permalink(); ?>" rel="bookmark">
-            <div class = "mask"></div>
+            <div class="mask"></div>
             <?php if (has_post_thumbnail()) : ?>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('featured-thumb'); ?></a>
             <?php else: ?>

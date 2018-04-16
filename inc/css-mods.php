@@ -14,9 +14,9 @@ function simpel_custom_css_mods() {
         echo "#masthead h2.site-description { color: #".get_theme_mod('header_textcolor')."; }";
     endif;
 
-//    if (!display_header_text()):
-//        echo "#masthead .site-branding #text-title-desc { display: none; }";
-//    endif;
+    if (!display_header_text()):
+        echo "#masthead .site-branding #text-title-desc { display: none; }";
+    endif;
 
     if ( get_theme_mod('simpel_title_font','Oswald') ) :
         echo ".title-font, h1, h2 { font-family: ".esc_html(get_theme_mod('simpel_title_font'))."; }";

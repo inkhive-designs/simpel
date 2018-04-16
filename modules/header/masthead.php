@@ -3,22 +3,17 @@
 
 
         <div class="site-branding container">
-            <?php if (get_theme_mod("logo")) { ?>
-                <div id = "logo" class = "col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <a href="<?php echo esc_url(home_url('/')); ?>"><img src ="<?php echo esc_url(get_theme_mod('logo')); ?>">
+            <?php if ( simpel_has_logo() ) : ?>
+                <div id="site-logo">
+                    <?php simpel_logo(); ?>
                 </div>
-            <?php }
-            else {
+            <?php else: ?>
                 ?>
-<!--                <div id="text-title-desc">-->
-<!--                    <h1 class="site-title title-font"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
-<!--                    <h2 class="site-description">--><?php //bloginfo( 'description' ); ?><!--</h2>-->
-<!--                </div>-->
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <div id="site-description-wrapper">
+                <div id="text-title-desc">
+                    <h1 class="site-title title-font"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                     <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
                 </div>
-            <?php } ?>
+            <?php endif; ?>
         </div><!-- .site-branding -->
 
 

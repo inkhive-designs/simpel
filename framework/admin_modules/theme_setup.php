@@ -30,6 +30,13 @@ if ( ! function_exists( 'simpel_setup' ) ) :
         */
 
         add_theme_support( 'title-tag' );
+
+        add_theme_support( 'custom-logo', array(
+            'height'      => 100,
+            'width'       => 200,
+            'flex-height' => true,
+            'flex-width'  => true,
+        ) );
         /*
          * Enable support for Post Thumbnails on posts and pages.
          *
@@ -38,6 +45,7 @@ if ( ! function_exists( 'simpel_setup' ) ) :
         add_theme_support( 'post-thumbnails' );
 
         add_image_size( 'featured-thumb', 800, 600, true );
+        add_image_size('simpel-pop-thumb',542, 340, true );
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
